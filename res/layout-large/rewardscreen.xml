@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B0E2FF"
+    android:orientation="vertical"
+    tools:context=".MainFragment" >
+
+    <FrameLayout
+        android:id="@+id/flLvlUpPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="beforeDescendants"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lvl_card_background"
+            android:descendantFocusability="afterDescendants"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:weightSum="2"
+             >
+
+            <TextView
+                android:id="@+id/tvLvlUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:text="Level Up!" />
+
+            <ImageView
+                android:id="@+id/ivLogoLvlUp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/category_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"
+        android:textSize="90dp" />
+
+    <ImageView
+        android:id="@+id/ivTreasureChest"
+        android:layout_width="325dp"
+        android:layout_height="325dp"
+        android:layout_centerInParent="true"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvXP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="+1 XP"
+            android:textColor="#C71585"
+            android:textSize="90dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivStudentCoin1"
+            android:layout_width="275dp"
+            android:layout_height="275dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/ivStudentCoin2"
+            android:layout_width="275dp"
+            android:layout_height="275dp"
+            android:layout_alignBottom="@id/ivStudentCoin1"
+            android:gravity="center"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/ivStudentCoin3"
+            android:layout_width="275dp"
+            android:layout_height="275dp"
+            android:layout_alignBottom="@id/ivStudentCoin1"
+            android:layout_marginLeft="200dp"
+            android:gravity="center"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="155dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/ivCoinSack"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="129dp"
+            android:padding="20dp" />
+
+        <TextView
+            android:id="@+id/currentScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="129dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="100dip"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/myProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="500dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:progressDrawable="@drawable/custom_progress_bar"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvCurrentLvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/myProgress"
+        android:layout_alignLeft="@+id/myProgress"
+        android:layout_alignRight="@+id/myProgress"
+        android:layout_alignTop="@+id/myProgress"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="50dip"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivTreasureChest"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"
+        android:textSize="100dip" />
+
+    <TextView
+        android:id="@+id/tvRewardMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/category_name"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="80dip" />
+
+    <RelativeLayout
+        android:id="@+id/achievementLayout"
+        android:layout_width="500dp"
+        android:layout_height="100dp"
+        android:background="#00C957"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tvMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30dip" />
+
+        <ImageView
+            android:id="@+id/achievementImg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/applehero" />
+    </RelativeLayout>
+
+    <NumberPicker
+        android:id="@+id/categoryPicker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:weightSum="3" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tvClassTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Classroom Level"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <ProgressBar
+            android:id="@+id/classLevelProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_below="@id/tvClassTitle"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="35dp"
+            android:layout_marginTop="35dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="60"
+            android:progressDrawable="@drawable/circular_class_progress" />
+
+        <TextView
+            android:id="@+id/tvClassPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Lvl: 1"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tvStudentsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Daily Stamp Count"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <View
+            android:id="@+id/vNumStudents"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_below="@id/tvStudentsTitle"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/student_circle" />
+
+        <TextView
+            android:id="@+id/tvNumStudents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="32"
+            android:textColor="#000000"
+            android:textSize="37dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tvJarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Classroom Jar"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <ProgressBar
+            android:id="@+id/jarProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_below="@id/tvJarTitle"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="35dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="45"
+            android:progressDrawable="@drawable/circular_jar_progress" />
+
+        <TextView
+            android:id="@+id/tvJarPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0/1000"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

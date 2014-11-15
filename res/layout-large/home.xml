@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#191970" >
+
+    <fragment
+        android:id="@+id/teacher_info"
+        android:name="com.ego.ch.fragments.TeacherInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <fragment
+        android:id="@+id/class_info"
+        android:name="com.ego.ch.fragments.ClassInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teacher_info"
+        android:layout_marginTop="65dp" />
+
+    <fragment
+        android:id="@+id/class_stats"
+        android:name="com.ego.ch.fragments.ClassStats"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/class_info" />
+
+</RelativeLayout>

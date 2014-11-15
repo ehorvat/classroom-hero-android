@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <TextView
+            android:id="@+id/tvAverage"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:lines="2"
+            android:padding="15dp"
+            android:text="Average points per day \n 10"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tvTotalPoints"
+           android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:lines="2"
+            android:padding="15dp"
+            android:text="Total points awarded \n 100"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+    </LinearLayout>
+    
+       <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <TextView
+            android:id="@+id/tvTopCategory"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:lines="2"
+            android:padding="15dp"
+            android:text="Top Category \n On Task"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tvTopItem"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:lines="2"
+            android:padding="15dp"
+            android:text="Top Item \n Homework Pass"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+    </LinearLayout>
+    
+          <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <TextView
+            android:id="@+id/tvAttendanceStreak"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:lines="2"
+            android:padding="15dp"
+            android:text="Attendance Streak \n 2"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tvTotalSpent"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:lines="2"
+            android:padding="15dp"
+            android:text="Total Coins Spent \n 10000"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+    </LinearLayout>
+    
+                    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <TextView
+            android:id="@+id/tvItemsSold"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:lines="2"
+            android:padding="15dp"
+            android:text="Total Items Sold \n 17"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tvDailyStampRecord"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:lines="2"
+            android:padding="15dp"
+            android:text="Daily Stamp Record \n 50"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</LinearLayout>

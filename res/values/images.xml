@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="app_imgs">
+        <item>@drawable/back_layer</item>
+        <item>@drawable/ch_coin_flare_blue</item>
+        <item>@drawable/ch_coin</item>
+        <item>@drawable/coin_sack</item>
+        <item>@drawable/coins</item>
+        <item>@drawable/coins2</item>
+        <item>@drawable/itemsicon</item>
+        <item>@drawable/jar</item>
+        <item>@drawable/jar2</item>
+		<item>@drawable/teacher_coin</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ego.classroomheroandroid.TutorialFragment" >
+
+    <item
+        android:id="@+id/register_students"
+        android:showAsAction="ifRoom"
+        android:title="Register Students"/>
+    <item
+        android:id="@+id/backToProfile"
+        android:showAsAction="ifRoom"
+        android:title="Back"/>
+
+</menu>

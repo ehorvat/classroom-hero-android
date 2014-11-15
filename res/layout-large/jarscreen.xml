@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8DC"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/jarProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="389dp"
+        android:layout_height="451dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/jar2"
+        android:paddingBottom="25dp"
+        android:paddingLeft="55dp"
+        android:paddingRight="55dp"
+        android:paddingTop="60dp"
+        android:progressDrawable="@drawable/jar_progress" >
+    </ProgressBar>
+
+    <TextView
+        android:id="@+id/tvClassJar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:text="Class Jar"
+        android:textColor="#000000"
+        android:textSize="90sp" />
+
+    <TextView
+        android:id="@+id/tvJarErr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvClassJar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/changeAmount"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/tvClassJar" >
+
+        <TextView
+            android:id="@+id/currentAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="40dp"
+            android:text="1"
+            android:textColor="#000000"
+            android:textSize="90sp" />
+
+        <ImageView
+            android:id="@+id/subtractCoins"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="120dp" />
+
+        <TextView
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/subtractCoins"
+            android:layout_alignLeft="@+id/subtractCoins"
+            android:layout_alignRight="@+id/subtractCoins"
+            android:layout_alignTop="@+id/subtractCoins"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="#B0171F"
+            android:textSize="63sp" />
+
+        <ImageView
+            android:id="@+id/addCoins"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="120dp" />
+
+        <TextView
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/addCoins"
+            android:layout_alignLeft="@+id/addCoins"
+            android:layout_alignRight="@+id/addCoins"
+            android:layout_alignTop="@+id/addCoins"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="#228B22"
+            android:textSize="60dp" />
+
+        <ImageView
+            android:id="@+id/ivClassJar"
+            android:layout_width="700dp"
+            android:layout_height="700dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivJarCoins"
+            android:layout_width="700dp"
+            android:layout_height="700dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+       <ImageView
+        android:id="@+id/ivBackLayer"
+        android:layout_width="904dp"
+        android:layout_height="620dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/back_layer" />
+
+    <RelativeLayout
+        android:id="@+id/achievementLayout"
+        android:layout_width="500dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:background="#00C957"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tvComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Congratulations! Stamp the screen to claim your prize!"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:id="@+id/achievementImg"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_above="@id/tvComplete"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

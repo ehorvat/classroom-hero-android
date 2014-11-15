@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".AdminMainFragment"
+     android:background="@drawable/loadingpagebackground" >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:divider="#cdc9c9"
+        android:dividerHeight="2sp" >
+    </ListView>
+    
+    <!--  <RelativeLayout
+        android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+        
+         <ImageView
+        android:id="@+id/coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/egocoin" />
+      
+        </RelativeLayout>-->
+
+</LinearLayout>

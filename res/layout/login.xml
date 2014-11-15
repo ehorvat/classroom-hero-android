@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#1164B4" >
+
+    <ImageView
+        android:id="@+id/loginHomeIcon"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:src="@drawable/ch_logo" />
+
+    <ImageView
+        android:id="@+id/ivLoginInfo"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_action_about" />
+
+
+    <LinearLayout
+        android:id="@+id/editTexts"
+        android:layout_width="800px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="250dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/etUser"
+            android:layout_width="400dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Email"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:inputType="textEmailAddress"  />
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="400dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_edittext"
+            android:hint="Password"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:password="true" />
+
+        <ImageView
+            android:id="@+id/ivLoginButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/loginbutton" />
+
+        <TextView
+            android:id="@+id/tvFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:textSize="55dp" />
+    </LinearLayout>
+     <ImageView
+        android:id="@+id/ivErrorX"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@id/editTexts"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+    	android:layout_marginBottom="5dp"
+        android:src="@drawable/errorx"
+        android:visibility="gone" />
+    
+        <ImageView
+        android:id="@+id/ivCheck"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@id/editTexts"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+    	android:layout_marginBottom="5dp"
+        android:src="@drawable/check"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/tvLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/editTexts"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+    	android:layout_marginBottom="5dp"
+        android:text="Loading..."
+        android:textColor="#000000"
+        android:textSize="55dp" />
+
+    <TextView
+        android:id="@+id/tvSite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Visit us at http://www.classroom-hero.com"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#B0E2FF" >
+
+    <TextView
+        android:id="@+id/tvRewardInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="@string/tutorial_reward"
+        android:textSize="60dp" />
+
+    <ImageView
+        android:id="@+id/ivCoin"
+        android:layout_width="325dp"
+        android:layout_height="325dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:src="@drawable/ch_coin_flare_blue" />
+
+    <NumberPicker
+        android:id="@+id/categoryPicker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp" />
+
+</RelativeLayout>

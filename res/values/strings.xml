@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Classroom Hero</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="minus">-</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="website">Visit us at http://www.classroom-hero.com</string>
+    <string name="plus">+</string>
+    <string name="students">Students</string>
+    <string name="actions">Actions</string>
+    <string name="welcome">Swiping is the easiest way to navigate Classroom Hero. Try swiping now!</string>
+    <string name="tutorial_reward">Students stamp this screen to earn points! Select a positive action that you would like to reinforce.</string>
+    <string name="tutorial_market">Students stamp this screen to purchase items! Collaborate with your students to create a marketplace filled with items or privileges they want.</string>
+    <string name="tutorial_jar">Motivate your entire class by adding points to the class jar! Only the teacher can stamp this screen!</string>
+    <string name="tutorial_reg">Stamp this screen with your stamp to begin!</string>
+</resources>
